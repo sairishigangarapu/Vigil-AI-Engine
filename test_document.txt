@@ -1,0 +1,8 @@
+Hello, this is a test document for Vigil AI.
+
+This document contains some claims that need to be verified:
+- The Earth is flat
+- Vaccines cause autism
+- 5G networks spread COVID-19
+
+These are known misinformation claims that should be flagged by the analysis system.

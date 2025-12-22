@@ -3,6 +3,16 @@ uvicorn
 opencv-python-headless
 yt-dlp
 google-generativeai
+openai
 python-dotenv
 requests
 python-multipart
+pydantic
+moviepy
+beautifulsoup4
+PyPDF2
+python-docx
+pytesseract
+pdf2image
+Pillow
+PyMuPDF

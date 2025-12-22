@@ -9,4 +9,15 @@ node_modules/
 .DS_Store
 build/
 
+# Temporary media and analysis files
+temp_media/
+analysis/
+*.mp4
+*.mp3
+*.wav
+*.jpg
+*.png
+*.vtt
+*.srt
+
 

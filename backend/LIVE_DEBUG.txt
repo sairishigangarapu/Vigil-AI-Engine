@@ -1,0 +1,333 @@
+[2025-10-02 09:36:22.944] 
+================================================================================
+[2025-10-02 09:36:22.945] FUNCTION CALLED: download_video_and_get_metadata('https://www.instagram.com/reels/DJhAW2EBn-O/')
+[2025-10-02 09:36:25.835] ================================================================================
+[2025-10-02 09:36:25.836] FUNCTION CALLED: extract_audio_from_video('temp_media\0c6798fb-3ca0-495b-8696-37af9132471a.mp4')
+[2025-10-02 09:36:25.836]    Video file exists: True
+[2025-10-02 09:36:25.836]    Video file size: 1.23 MB
+[2025-10-02 09:36:25.837]    Creating audio path...
+[2025-10-02 09:36:25.839]    Target audio path: temp_media\0c6798fb-3ca0-495b-8696-37af9132471a_audio.mp3
+[2025-10-02 09:36:25.839]    Reading video properties with OpenCV...
+[2025-10-02 09:36:25.852]    Video duration: 8.37 seconds, FPS: 30.00
+[2025-10-02 09:36:25.852]    METHOD 1: Trying moviepy for audio extraction...
+[2025-10-02 09:36:25.853]    Attempting: from moviepy import VideoFileClip (2.x)
+[2025-10-02 09:36:27.174]    ✅ SUCCESS: Imported VideoFileClip from moviepy (2.x)
+[2025-10-02 09:36:27.176]    Opening video file with moviepy: temp_media\0c6798fb-3ca0-495b-8696-37af9132471a.mp4
+[2025-10-02 09:36:32.156]    Video loaded successfully
+[2025-10-02 09:36:32.157]    Checking for audio track...
+[2025-10-02 09:36:32.157]    Audio track found! Extracting to: temp_media\0c6798fb-3ca0-495b-8696-37af9132471a_audio.mp3
+[2025-10-02 09:36:32.158]    ❌ EXCEPTION (TypeError): got an unexpected keyword argument 'verbose'
+[2025-10-02 09:36:32.163]    Traceback: Traceback (most recent call last):
+  File "c:\Users\xlabb\Desktop\HP\College\Hackathon\Google Hack\vigilant-octo-enigma\backend\video_processor.py", line 489, in extract_audio_from_video
+    video_clip.audio.write_audiofile(audio_path, logger=None, verbose=False)
+  File "C:\Python312\Lib\site-packages\decorator.py", line 234, in fun
+    args, kw = fix(args, kw, sig)
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\decorator.py", line 204, in fix
+    ba = sig.bind(*args, **kwargs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\inspect.py", line 3267, in bind
+    return self._bind(args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\inspect.py", line 3256, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'verbose'
+
+[2025-10-02 09:36:32.164]    Falling back to METHOD 2: ffmpeg
+[2025-10-02 09:36:32.164]    METHOD 2: Trying ffmpeg for audio extraction...
+[2025-10-02 09:36:32.170]    ❌ BOTH METHODS FAILED - No audio extraction available
+[2025-10-02 09:38:03.476] 
+================================================================================
+[2025-10-02 09:38:03.477] FUNCTION CALLED: download_video_and_get_metadata('https://www.instagram.com/reels/DJhAW2EBn-O/')
+[2025-10-02 09:38:06.955] ================================================================================
+[2025-10-02 09:38:06.956] FUNCTION CALLED: extract_audio_from_video('temp_media\49019a2c-2ef4-4456-a377-7823187b7d4e.mp4')
+[2025-10-02 09:38:06.956]    Video file exists: True
+[2025-10-02 09:38:06.957]    Video file size: 1.23 MB
+[2025-10-02 09:38:06.957]    Creating audio path...
+[2025-10-02 09:38:06.958]    Target audio path: temp_media\49019a2c-2ef4-4456-a377-7823187b7d4e_audio.mp3
+[2025-10-02 09:38:06.958]    Reading video properties with OpenCV...
+[2025-10-02 09:38:06.970]    Video duration: 8.37 seconds, FPS: 30.00
+[2025-10-02 09:38:06.970]    METHOD 1: Trying moviepy for audio extraction...
+[2025-10-02 09:38:06.971]    Attempting: from moviepy import VideoFileClip (2.x)
+[2025-10-02 09:38:08.294]    ✅ SUCCESS: Imported VideoFileClip from moviepy (2.x)
+[2025-10-02 09:38:08.295]    Opening video file with moviepy: temp_media\49019a2c-2ef4-4456-a377-7823187b7d4e.mp4
+[2025-10-02 09:38:13.520]    Video loaded successfully
+[2025-10-02 09:38:13.521]    Checking for audio track...
+[2025-10-02 09:38:13.522]    Audio track found! Extracting to: temp_media\49019a2c-2ef4-4456-a377-7823187b7d4e_audio.mp3
+[2025-10-02 09:38:14.878]    Audio extraction complete, verifying file...
+[2025-10-02 09:38:14.879] ✅ SUCCESS: Audio extracted - 0.13 MB
+[2025-10-02 11:55:29.759] 
+================================================================================
+[2025-10-02 11:55:29.759] FUNCTION CALLED: download_video_and_get_metadata('https://www.instagram.com/reels/DJhAW2EBn-O/')
+[2025-10-02 11:55:32.776] ================================================================================
+[2025-10-02 11:55:32.777] FUNCTION CALLED: extract_audio_from_video('temp_media\178d2427-3752-41a3-b55b-3fc9446dd8d3.mp4')
+[2025-10-02 11:55:32.778]    Video file exists: True
+[2025-10-02 11:55:32.778]    Video file size: 1.23 MB
+[2025-10-02 11:55:32.779]    Creating audio path...
+[2025-10-02 11:55:32.780]    Target audio path: temp_media\178d2427-3752-41a3-b55b-3fc9446dd8d3_audio.mp3
+[2025-10-02 11:55:32.780]    Reading video properties with OpenCV...
+[2025-10-02 11:55:32.792]    Video duration: 8.37 seconds, FPS: 30.00
+[2025-10-02 11:55:32.793]    METHOD 1: Trying moviepy for audio extraction...
+[2025-10-02 11:55:32.793]    Attempting: from moviepy import VideoFileClip (2.x)
+[2025-10-02 11:55:34.162]    ✅ SUCCESS: Imported VideoFileClip from moviepy (2.x)
+[2025-10-02 11:55:34.163]    Opening video file with moviepy: temp_media\178d2427-3752-41a3-b55b-3fc9446dd8d3.mp4
+[2025-10-02 11:55:38.790]    Video loaded successfully
+[2025-10-02 11:55:38.790]    Checking for audio track...
+[2025-10-02 11:55:38.791]    Audio track found! Extracting to: temp_media\178d2427-3752-41a3-b55b-3fc9446dd8d3_audio.mp3
+[2025-10-02 11:55:40.181]    Audio extraction complete, verifying file...
+[2025-10-02 11:55:40.182] ✅ SUCCESS: Audio extracted - 0.13 MB
+[2025-10-02 12:52:55.375] ================================================================================
+[2025-10-02 12:52:55.375] FUNCTION CALLED: extract_audio_from_video('temp_media\0a469962-2f86-416a-b697-6e044aff8537.mp4')
+[2025-10-02 12:52:55.375]    Video file exists: True
+[2025-10-02 12:52:55.376]    Video file size: 0.07 MB
+[2025-10-02 12:52:55.377]    Creating audio path...
+[2025-10-02 12:52:55.377]    Target audio path: temp_media\0a469962-2f86-416a-b697-6e044aff8537_audio.mp3
+[2025-10-02 12:52:55.377]    Reading video properties with OpenCV...
+[2025-10-02 12:52:55.402]    Video duration: -1.00 seconds, FPS: 1.00
+[2025-10-02 12:52:55.402]    METHOD 1: Trying moviepy for audio extraction...
+[2025-10-02 12:52:55.403]    Attempting: from moviepy import VideoFileClip (2.x)
+[2025-10-02 12:52:56.216]    ✅ SUCCESS: Imported VideoFileClip from moviepy (2.x)
+[2025-10-02 12:52:56.216]    Opening video file with moviepy: temp_media\0a469962-2f86-416a-b697-6e044aff8537.mp4
+[2025-10-02 12:52:57.851]    ❌ EXCEPTION (OSError): MoviePy error: failed to read the first frame of video file temp_media\0a469962-2f86-416a-b697-6e044aff8537.mp4. That might mean that the file is corrupted. That may also mean that you are using a deprecated version of FFMPEG. On Ubuntu/Debian for instance the version in the repos is deprecated. Please update to a recent version from the website.
+[2025-10-02 12:52:57.857]    Traceback: Traceback (most recent call last):
+  File "C:\Users\xlabb\Desktop\HP\College\Hackathon\Google Hack\vigilant-octo-enigma\backend\video_processor.py", line 480, in extract_audio_from_video
+    video_clip = VideoFileClip(video_path)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\decorator.py", line 235, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xlabb\AppData\Roaming\Python\Python312\site-packages\moviepy\decorators.py", line 102, in wrapper
+    return func(*new_args, **new_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xlabb\AppData\Roaming\Python\Python312\site-packages\moviepy\video\io\VideoFileClip.py", line 109, in __init__
+    self.reader = FFMPEG_VideoReader(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xlabb\AppData\Roaming\Python\Python312\site-packages\moviepy\video\io\ffmpeg_reader.py", line 81, in __init__
+    self.initialize()
+  File "C:\Users\xlabb\AppData\Roaming\Python\Python312\site-packages\moviepy\video\io\ffmpeg_reader.py", line 167, in initialize
+    self.last_read = self.read_frame()
+                     ^^^^^^^^^^^^^^^^^
+  File "C:\Users\xlabb\AppData\Roaming\Python\Python312\site-packages\moviepy\video\io\ffmpeg_reader.py", line 208, in read_frame
+    raise IOError(
+OSError: MoviePy error: failed to read the first frame of video file temp_media\0a469962-2f86-416a-b697-6e044aff8537.mp4. That might mean that the file is corrupted. That may also mean that you are using a deprecated version of FFMPEG. On Ubuntu/Debian for instance the version in the repos is deprecated. Please update to a recent version from the website.
+
+[2025-10-02 12:52:57.857]    Falling back to METHOD 2: ffmpeg
+[2025-10-02 12:52:57.858]    METHOD 2: Trying ffmpeg for audio extraction...
+[2025-10-02 12:52:57.865]    ❌ BOTH METHODS FAILED - No audio extraction available
+[2025-10-02 12:59:28.165] ================================================================================
+[2025-10-02 12:59:28.166] FUNCTION CALLED: extract_audio_from_video('temp_media\952e0411-279b-4794-afae-8b34b58453bf.mp4')
+[2025-10-02 12:59:28.166]    Video file exists: True
+[2025-10-02 12:59:28.167]    Video file size: 0.07 MB
+[2025-10-02 12:59:28.168]    Creating audio path...
+[2025-10-02 12:59:28.168]    Target audio path: temp_media\952e0411-279b-4794-afae-8b34b58453bf_audio.mp3
+[2025-10-02 12:59:28.169]    Reading video properties with OpenCV...
+[2025-10-02 12:59:28.197]    Video duration: -1.00 seconds, FPS: 1.00
+[2025-10-02 12:59:28.198]    METHOD 1: Trying moviepy for audio extraction...
+[2025-10-02 12:59:28.199]    Attempting: from moviepy import VideoFileClip (2.x)
+[2025-10-02 12:59:29.409]    ✅ SUCCESS: Imported VideoFileClip from moviepy (2.x)
+[2025-10-02 12:59:29.409]    Opening video file with moviepy: temp_media\952e0411-279b-4794-afae-8b34b58453bf.mp4
+[2025-10-02 12:59:31.936]    ❌ EXCEPTION (OSError): MoviePy error: failed to read the first frame of video file temp_media\952e0411-279b-4794-afae-8b34b58453bf.mp4. That might mean that the file is corrupted. That may also mean that you are using a deprecated version of FFMPEG. On Ubuntu/Debian for instance the version in the repos is deprecated. Please update to a recent version from the website.
+[2025-10-02 12:59:31.939]    Traceback: Traceback (most recent call last):
+  File "C:\Users\xlabb\Desktop\HP\College\Hackathon\Google Hack\vigilant-octo-enigma\backend\video_processor.py", line 480, in extract_audio_from_video
+    video_clip = VideoFileClip(video_path)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\decorator.py", line 235, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xlabb\AppData\Roaming\Python\Python312\site-packages\moviepy\decorators.py", line 102, in wrapper
+    return func(*new_args, **new_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xlabb\AppData\Roaming\Python\Python312\site-packages\moviepy\video\io\VideoFileClip.py", line 109, in __init__
+    self.reader = FFMPEG_VideoReader(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xlabb\AppData\Roaming\Python\Python312\site-packages\moviepy\video\io\ffmpeg_reader.py", line 81, in __init__
+    self.initialize()
+  File "C:\Users\xlabb\AppData\Roaming\Python\Python312\site-packages\moviepy\video\io\ffmpeg_reader.py", line 167, in initialize
+    self.last_read = self.read_frame()
+                     ^^^^^^^^^^^^^^^^^
+  File "C:\Users\xlabb\AppData\Roaming\Python\Python312\site-packages\moviepy\video\io\ffmpeg_reader.py", line 208, in read_frame
+    raise IOError(
+OSError: MoviePy error: failed to read the first frame of video file temp_media\952e0411-279b-4794-afae-8b34b58453bf.mp4. That might mean that the file is corrupted. That may also mean that you are using a deprecated version of FFMPEG. On Ubuntu/Debian for instance the version in the repos is deprecated. Please update to a recent version from the website.
+
+[2025-10-02 12:59:31.939]    Falling back to METHOD 2: ffmpeg
+[2025-10-02 12:59:31.940]    METHOD 2: Trying ffmpeg for audio extraction...
+[2025-10-02 12:59:31.945]    ❌ BOTH METHODS FAILED - No audio extraction available
+[2025-10-02 13:02:40.749] ================================================================================
+[2025-10-02 13:02:40.750] FUNCTION CALLED: extract_audio_from_video('temp_media\85e12f5a-024a-46cd-a998-68f0e5956c93.mp4')
+[2025-10-02 13:02:40.751]    Video file exists: True
+[2025-10-02 13:02:40.752]    Video file size: 0.07 MB
+[2025-10-02 13:02:40.755]    Creating audio path...
+[2025-10-02 13:02:40.757]    Target audio path: temp_media\85e12f5a-024a-46cd-a998-68f0e5956c93_audio.mp3
+[2025-10-02 13:02:40.758]    Reading video properties with OpenCV...
+[2025-10-02 13:02:40.814]    Video duration: -1.00 seconds, FPS: 1.00
+[2025-10-02 13:02:40.815]    METHOD 1: Trying moviepy for audio extraction...
+[2025-10-02 13:02:40.816]    Attempting: from moviepy import VideoFileClip (2.x)
+[2025-10-02 13:02:41.801]    ✅ SUCCESS: Imported VideoFileClip from moviepy (2.x)
+[2025-10-02 13:02:41.802]    Opening video file with moviepy: temp_media\85e12f5a-024a-46cd-a998-68f0e5956c93.mp4
+[2025-10-02 13:02:43.455]    ⚠️ VideoFileClip failed: MoviePy error: failed to read the first frame of video file temp_media\85e12f5a-024a-46cd-a998-68f0e5956c93.mp4. That might mean that the file is corrupted. That may also mean that you are using a deprecated version of FFMPEG. On Ubuntu/Debian for instance the version in the repos is deprecated. Please update to a recent version from the website.
+[2025-10-02 13:02:43.456]    Attempting to load as audio-only file with AudioFileClip...
+[2025-10-02 13:02:45.092]    Audio-only file loaded successfully
+[2025-10-02 13:02:45.093]    Extracting audio to: temp_media\85e12f5a-024a-46cd-a998-68f0e5956c93_audio.mp3
+[2025-10-02 13:02:45.973]    Audio extraction complete, verifying file...
+[2025-10-02 13:02:45.974] ✅ SUCCESS: Audio extracted from audio-only file - 0.06 MB
+[2025-10-02 13:17:45.341] FUNCTION CALLED: extract_text_from_document('temp_media\4561b475-cc3f-49c2-86a5-3363c93b485f.pdf', '.pdf')
+[2025-10-02 13:17:45.561]    Extracted 1 characters from PDF (1 pages)
+[2025-10-02 13:23:00.558] FUNCTION CALLED: extract_text_from_document('temp_media\0279288d-51f7-46de-865c-9a0e1d3cb228.pdf', '.pdf')
+[2025-10-02 13:23:00.603]    Extracted 1 characters from PDF (1 pages)
+[2025-10-02 13:23:27.513] FUNCTION CALLED: extract_text_from_document('temp_media\1e8069ad-f024-4972-99c2-196735cf3ba7.pdf', '.pdf')
+[2025-10-02 13:23:27.519]    Extracted 1 characters from PDF (1 pages)
+[2025-10-02 13:25:08.333] FUNCTION CALLED: extract_text_from_document('temp_media\87365b0d-0aa8-4793-8c29-b68ed8727d0b.pdf', '.pdf')
+[2025-10-02 13:25:08.381]    Extracted 1 characters from PDF (1 pages)
+[2025-10-02 13:26:59.454] FUNCTION CALLED: extract_text_from_document('temp_media\f64210b2-5d33-40f3-b2e4-ea3375fc6985.pdf', '.pdf')
+[2025-10-02 13:26:59.501]    Extracted 0 characters from PDF (1 pages)
+[2025-10-02 13:26:59.502]    ⚠️ WARNING: Very little text extracted. PDF might be scanned/image-based.
+[2025-10-02 13:26:59.503]    ⚠️ Scanned PDFs require OCR (Optical Character Recognition) to extract text.
+[2025-10-02 13:27:18.792] FUNCTION CALLED: extract_text_from_document('temp_media\9e11cd60-4d2b-40e8-a654-4312de002840.pdf', '.pdf')
+[2025-10-02 13:27:19.205]    Extracted 15132 characters from PDF (5 pages)
+[2025-10-02 13:28:48.015] FUNCTION CALLED: extract_text_from_document('temp_media\0a3e3711-6827-41a8-a652-26e285933c47.pdf', '.pdf')
+[2025-10-02 13:28:48.036]    Extracted 220 characters from PDF (1 pages)
+[2025-10-02 13:32:47.125] FUNCTION CALLED: extract_text_from_document('temp_media\039e54f1-dddc-4719-91f9-bb8c00271fea.pdf', '.pdf')
+[2025-10-02 13:32:47.282]    Extracted 0 characters from PDF (1 pages)
+[2025-10-02 13:32:47.283]    ⚠️ WARNING: Very little text extracted. PDF might be scanned/image-based.
+[2025-10-02 13:32:47.285]    ⚠️ Scanned PDFs require OCR (Optical Character Recognition) to extract text.
+[2025-10-02 13:34:09.830] FUNCTION CALLED: extract_text_from_document('temp_media\7d36ad91-f215-4bdf-8cdb-8218ebacee41.pdf', '.pdf')
+[2025-10-02 13:34:09.876]    Extracted 0 characters from PDF (1 pages)
+[2025-10-02 13:34:09.877]    ⚠️ WARNING: Very little text extracted. PDF might be scanned/image-based.
+[2025-10-02 13:34:09.878]    ⚠️ Scanned PDFs require OCR (Optical Character Recognition) to extract text.
+[2025-10-02 13:35:27.867] FUNCTION CALLED: extract_text_from_document('temp_media\e23c4038-7c69-4a70-bb60-ac61e68011d1.pdf', '.pdf')
+[2025-10-02 13:35:27.870]    Extracted 0 characters from PDF (1 pages)
+[2025-10-02 13:35:27.870]    ⚠️ WARNING: Very little text extracted. PDF might be scanned/image-based.
+[2025-10-02 13:35:27.871]    ⚠️ Scanned PDFs require OCR (Optical Character Recognition) to extract text.
+[2025-10-02 14:16:13.398] FUNCTION CALLED: extract_text_from_document('temp_media\2d3836d9-243b-45bb-a379-13312b6e9007.pdf', '.pdf')
+[2025-10-02 14:16:13.523]    Extracted 0 characters from PDF (1 pages)
+[2025-10-02 14:16:13.525]    ⚠️ WARNING: Very little text extracted (0 chars).
+[2025-10-02 14:16:13.525]    🎨 This appears to be a scanned/image-based PDF.
+[2025-10-02 14:16:13.526]    💡 Will extract images and use Gemini Vision API instead.
+[2025-10-02 14:16:13.733]    🖼️ Extracting images from PDF pages...
+[2025-10-02 14:16:14.062]    ✅ Extracted page 1/1 as image
+[2025-10-02 14:16:14.065]    ✅ Extracted 1 images from PDF
+[2025-10-02 14:16:35.914] FUNCTION CALLED: extract_text_from_document('temp_media\1c76c0b6-c083-480d-a1ec-8cd21aa84716.pdf', '.pdf')
+[2025-10-02 14:16:35.961]    Extracted 0 characters from PDF (1 pages)
+[2025-10-02 14:16:35.962]    ⚠️ WARNING: Very little text extracted (0 chars).
+[2025-10-02 14:16:35.963]    🎨 This appears to be a scanned/image-based PDF.
+[2025-10-02 14:16:35.963]    💡 Will extract images and use Gemini Vision API instead.
+[2025-10-02 14:16:36.006]    🖼️ Extracting images from PDF pages...
+[2025-10-02 14:16:36.134]    ✅ Extracted page 1/1 as image
+[2025-10-02 14:16:36.135]    ✅ Extracted 1 images from PDF
+[2025-10-02 15:35:35.503] FUNCTION CALLED: extract_text_from_document('temp_media\cda1741c-36c5-4720-b916-1cb332ad8c96.pdf', '.pdf')
+[2025-10-02 15:35:35.621]    Extracted 0 characters from PDF (1 pages)
+[2025-10-02 15:35:35.622]    ⚠️ WARNING: Very little text extracted (0 chars).
+[2025-10-02 15:35:35.622]    🎨 This appears to be a scanned/image-based PDF.
+[2025-10-02 15:35:35.623]    💡 Will extract images and use Gemini Vision API instead.
+[2025-10-02 15:35:35.695]    📸 Rendering PDF pages as images for OCR...
+[2025-10-02 15:35:35.885]    ✅ Rendered page 1/1 as image
+[2025-10-02 15:35:35.886]    ✅ Rendered 1 pages as images
+[2025-10-02 15:54:44.073] FUNCTION CALLED: extract_text_from_document('temp_media\fe1204ac-36dd-4ef5-a102-4a9edc6da29f.pdf', '.pdf')
+[2025-10-02 15:54:44.078]    Extracted 0 characters from PDF (1 pages)
+[2025-10-02 15:54:44.079]    ⚠️ WARNING: Very little text extracted (0 chars).
+[2025-10-02 15:54:44.080]    🎨 This appears to be a scanned/image-based PDF.
+[2025-10-02 15:54:44.081]    💡 Will extract images and use Gemini Vision API instead.
+[2025-10-02 15:54:44.083]    📸 Rendering PDF pages as images for OCR...
+[2025-10-02 15:54:44.260]    ✅ Rendered page 1/1 as image
+[2025-10-02 15:54:44.262]    ✅ Rendered 1 pages as images
+[2025-10-02 15:55:40.065] FUNCTION CALLED: extract_text_from_document('temp_media\449ac04d-66d9-4d1a-a4f0-675dc9722d17.pdf', '.pdf')
+[2025-10-02 15:55:40.082]    Extracted 220 characters from PDF (1 pages)
+[2025-10-02 15:55:40.086]    🖼️ Scanning PDF for embedded images and text content...
+[2025-10-02 15:55:40.098]    📊 PDF Analysis: 216 characters found
+[2025-10-02 15:55:40.098]    📄 PDF Type: Text-based
+[2025-10-02 15:55:40.101]    📸 Page 1: Found 1 embedded image(s)
+[2025-10-02 15:55:40.106]    ✅ Extracted: embedded_page1_img1.png
+[2025-10-02 15:55:40.107]    ✅ Total embedded images extracted: 1
+[2025-10-02 16:44:13.531] 
+================================================================================
+[2025-10-02 16:44:13.534] FUNCTION CALLED: download_video_and_get_metadata('https://www.instagram.com/reels/DJhAW2EBn-O/')
+[2025-10-02 16:44:20.983] ================================================================================
+[2025-10-02 16:44:20.986] FUNCTION CALLED: extract_audio_from_video('temp_media\35ba53b0-25c1-4abd-a796-73b3ea5a0efc.mp4')
+[2025-10-02 16:44:20.988]    Video file exists: True
+[2025-10-02 16:44:20.990]    Video file size: 1.23 MB
+[2025-10-02 16:44:20.995]    Creating audio path...
+[2025-10-02 16:44:20.997]    Target audio path: temp_media\35ba53b0-25c1-4abd-a796-73b3ea5a0efc_audio.mp3
+[2025-10-02 16:44:20.999]    Reading video properties with OpenCV...
+[2025-10-02 16:44:21.051]    Video duration: 8.37 seconds, FPS: 30.00
+[2025-10-02 16:44:21.054]    METHOD 1: Trying moviepy for audio extraction...
+[2025-10-02 16:44:21.056]    Attempting: from moviepy import VideoFileClip (2.x)
+[2025-10-02 16:44:22.809]    ✅ SUCCESS: Imported VideoFileClip from moviepy (2.x)
+[2025-10-02 16:44:22.811]    Opening video file with moviepy: temp_media\35ba53b0-25c1-4abd-a796-73b3ea5a0efc.mp4
+[2025-10-02 16:44:28.834]    Video loaded successfully
+[2025-10-02 16:44:28.837]    Checking for audio track...
+[2025-10-02 16:44:28.839]    Audio track found! Extracting to: temp_media\35ba53b0-25c1-4abd-a796-73b3ea5a0efc_audio.mp3
+[2025-10-02 16:44:30.690]    Audio extraction complete, verifying file...
+[2025-10-02 16:44:30.695] ✅ SUCCESS: Audio extracted - 0.13 MB
+[2025-10-02 16:49:55.191] 
+================================================================================
+[2025-10-02 16:49:55.192] FUNCTION CALLED: download_video_and_get_metadata('https://www.instagram.com/reels/DJhAW2EBn-O/')
+[2025-10-02 16:49:58.845] ================================================================================
+[2025-10-02 16:49:58.847] FUNCTION CALLED: extract_audio_from_video('temp_media\a0070117-084a-486c-bb81-cf0407e26d9c.mp4')
+[2025-10-02 16:49:58.848]    Video file exists: True
+[2025-10-02 16:49:58.848]    Video file size: 1.23 MB
+[2025-10-02 16:49:58.849]    Creating audio path...
+[2025-10-02 16:49:58.850]    Target audio path: temp_media\a0070117-084a-486c-bb81-cf0407e26d9c_audio.mp3
+[2025-10-02 16:49:58.850]    Reading video properties with OpenCV...
+[2025-10-02 16:49:58.864]    Video duration: 8.37 seconds, FPS: 30.00
+[2025-10-02 16:49:58.865]    METHOD 1: Trying moviepy for audio extraction...
+[2025-10-02 16:49:58.865]    Attempting: from moviepy import VideoFileClip (2.x)
+[2025-10-02 16:49:58.866]    ✅ SUCCESS: Imported VideoFileClip from moviepy (2.x)
+[2025-10-02 16:49:58.867]    Opening video file with moviepy: temp_media\a0070117-084a-486c-bb81-cf0407e26d9c.mp4
+[2025-10-02 16:50:04.294]    Video loaded successfully
+[2025-10-02 16:50:04.294]    Checking for audio track...
+[2025-10-02 16:50:04.295]    Audio track found! Extracting to: temp_media\a0070117-084a-486c-bb81-cf0407e26d9c_audio.mp3
+[2025-10-02 16:50:05.750]    Audio extraction complete, verifying file...
+[2025-10-02 16:50:05.751] ✅ SUCCESS: Audio extracted - 0.13 MB
+[2025-10-02 17:40:06.645] FUNCTION CALLED: extract_text_from_document('temp_media\7117fe56-5bf7-46d5-acb2-f32f20a5390b.pdf', '.pdf')
+[2025-10-02 17:40:06.649]    Extracted 0 characters from PDF (1 pages)
+[2025-10-02 17:40:06.650]    ⚠️ WARNING: Very little text extracted (0 chars).
+[2025-10-02 17:40:06.651]    🎨 This appears to be a scanned/image-based PDF.
+[2025-10-02 17:40:06.652]    💡 Will extract images and use Gemini Vision API instead.
+[2025-10-02 17:40:06.654]    📸 Rendering PDF pages as images for OCR...
+[2025-10-02 17:40:06.979]    ✅ Rendered page 1/1 as image
+[2025-10-02 17:40:06.980]    ✅ Rendered 1 pages as images
+[2025-10-02 22:05:13.378] 
+================================================================================
+[2025-10-02 22:05:13.379] FUNCTION CALLED: download_video_and_get_metadata('https://www.instagram.com/reels/DJhAW2EBn-O/')
+[2025-10-02 22:05:17.712] ================================================================================
+[2025-10-02 22:05:17.713] FUNCTION CALLED: extract_audio_from_video('temp_media\dff2c3d1-ac0d-46c6-9b03-5209066965cf.mp4')
+[2025-10-02 22:05:17.714]    Video file exists: True
+[2025-10-02 22:05:17.714]    Video file size: 1.23 MB
+[2025-10-02 22:05:17.717]    Creating audio path...
+[2025-10-02 22:05:17.718]    Target audio path: temp_media\dff2c3d1-ac0d-46c6-9b03-5209066965cf_audio.mp3
+[2025-10-02 22:05:17.719]    Reading video properties with OpenCV...
+[2025-10-02 22:05:17.740]    Video duration: 8.37 seconds, FPS: 30.00
+[2025-10-02 22:05:17.741]    METHOD 1: Trying moviepy for audio extraction...
+[2025-10-02 22:05:17.742]    Attempting: from moviepy import VideoFileClip (2.x)
+[2025-10-02 22:05:18.650]    ✅ SUCCESS: Imported VideoFileClip from moviepy (2.x)
+[2025-10-02 22:05:18.651]    Opening video file with moviepy: temp_media\dff2c3d1-ac0d-46c6-9b03-5209066965cf.mp4
+[2025-10-02 22:05:21.794]    Video loaded successfully
+[2025-10-02 22:05:21.795]    Checking for audio track...
+[2025-10-02 22:05:21.796]    Audio track found! Extracting to: temp_media\dff2c3d1-ac0d-46c6-9b03-5209066965cf_audio.mp3
+[2025-10-02 22:05:22.764]    Audio extraction complete, verifying file...
+[2025-10-02 22:05:22.765] ✅ SUCCESS: Audio extracted - 0.13 MB
+[2025-10-03 06:45:19.295] ================================================================================
+[2025-10-03 06:45:19.297] FUNCTION CALLED: extract_audio_from_video('temp_media\abe820a5-cdf8-421c-b181-d7533637962b.mp4')
+[2025-10-03 06:45:19.299]    Video file exists: True
+[2025-10-03 06:45:19.301]    Video file size: 1.23 MB
+[2025-10-03 06:45:19.304]    Creating audio path...
+[2025-10-03 06:45:19.308]    Target audio path: temp_media\abe820a5-cdf8-421c-b181-d7533637962b_audio.mp3
+[2025-10-03 06:45:19.310]    Reading video properties with OpenCV...
+[2025-10-03 06:45:19.362]    Video duration: 8.37 seconds, FPS: 30.00
+[2025-10-03 06:45:19.363]    METHOD 1: Trying moviepy for audio extraction...
+[2025-10-03 06:45:19.367]    Attempting: from moviepy import VideoFileClip (2.x)
+[2025-10-03 06:45:22.012]    ✅ SUCCESS: Imported VideoFileClip from moviepy (2.x)
+[2025-10-03 06:45:22.014]    Opening video file with moviepy: temp_media\abe820a5-cdf8-421c-b181-d7533637962b.mp4
+[2025-10-03 06:45:28.590]    Video loaded successfully
+[2025-10-03 06:45:28.608]    Checking for audio track...
+[2025-10-03 06:45:28.610]    Audio track found! Extracting to: temp_media\abe820a5-cdf8-421c-b181-d7533637962b_audio.mp3
+[2025-10-03 06:45:30.379]    Audio extraction complete, verifying file...
+[2025-10-03 06:45:30.381] ✅ SUCCESS: Audio extracted - 0.13 MB
+[2025-10-03 21:45:44.642] FUNCTION CALLED: extract_text_from_document('temp_media\31f0467e-7435-4ca7-8add-22046977643f.pdf', '.pdf')
+[2025-10-03 21:45:45.045]    Extracted 220 characters from PDF (1 pages)
+[2025-10-03 21:45:45.503]    🖼️ Scanning PDF for embedded images and text content...
+[2025-10-03 21:45:45.570]    📊 PDF Analysis: 216 characters found
+[2025-10-03 21:45:45.572]    📄 PDF Type: Text-based
+[2025-10-03 21:45:45.581]    📸 Page 1: Found 1 embedded image(s)
+[2025-10-03 21:45:45.605]    ✅ Extracted: embedded_page1_img1.png
+[2025-10-03 21:45:45.609]    ✅ Total embedded images extracted: 1
